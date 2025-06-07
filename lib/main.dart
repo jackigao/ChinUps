@@ -83,18 +83,14 @@ class ChineasyHome extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: 10),
                 Text(
-                  '📋 Paste text or drop an image here',
+                  '⌨ Paste English or Chinese text',
                   style: TextStyle(fontSize: 14, color: Color(0xFF555555)),
                 ),
                 SizedBox(height: 10),
                 Text(
-                  '⌨ Paste Chinese or screenshot text',
-                  style: TextStyle(fontSize: 14, color: Color(0xFF555555)),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  '🖼️ Drag and drop an image',
+                  '🖼️ Select image',
                   style: TextStyle(fontSize: 14, color: Color(0xFF555555)),
                 ),
               ],
@@ -115,18 +111,18 @@ class ChineasyHome extends StatelessWidget {
                 onPressed: () {},
                 child: Text('📸 Camera'),
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFF0078D4),
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  textStyle: TextStyle(fontSize: 16),
-                ),
-                onPressed: () {},
-                child: Text('🎙️ Record'),
-              ),
+              // ElevatedButton(
+              //   style: ElevatedButton.styleFrom(
+              //     backgroundColor: Color(0xFF0078D4),
+              //     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              //     shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.circular(5),
+              //     ),
+              //     textStyle: TextStyle(fontSize: 16),
+              //   ),
+              //   onPressed: () {},
+              //   child: Text('🎙️ Record'),
+              // ),
             ],
           ),
         ],
